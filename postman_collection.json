@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "343f00c7-62c5-4549-bf83-5f6ac341c4f5",
+		"name": "postman_collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Cadastrar Usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Marcel Philippe Abreu Andrade\",\n\t\"email\": \"marcelpaa@hotmail.com\",\n\t\"chavePublica\": \"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjxZGOF0QgQzoLrPT4WW7UGIiHgCVnueRssNVjIttx4B2EMSYeXOWlMPiIyw/N5cp1XthkRhSSsk+c25tgC9eYcClUjKefPBgNtD0jLAopNcozif6wwqgiQPG/0ahpAEpRe2a4IXKU3WAEGa8KIYPwPENxqEWzxqL6sxr9rOtJIqEi1qPbBsUul8axy5dX26iguqz6dVc8eCLCoTBLIWPkMvotLIKcTDERVGUsd4gg6bToqdnU/MS3rwiIm1/7opA84IYEgOa2/M0Q0FeO+akI9Z43a5jFaDV63lDV1h6qckv+b/eci79NmRkpE9JIcSG6UPQng3z5Pc6SWTc0B0akQIDAQAB\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuario/cadastrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuario",
+								"cadastrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Usuario Por Nome",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Marcel Philippe Abreu Andrade\",\n\t\"chavePrivada\": \"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCPFkY4XRCBDOgus9PhZbtQYiIeAJWe55Gyw1WMi23HgHYQxJh5c5aUw+IjLD83lynVe2GRGFJKyT5zbm2AL15hwKVSMp588GA20PSMsCik1yjOJ/rDCqCJA8b/RqGkASlF7ZrghcpTdYAQZrwohg/A8Q3GoRbPGovqzGv2s60kioSLWo9sGxS6XxrHLl1fbqKC6rPp1Vzx4IsKhMEshY+Qy+i0sgpxMMRFUZSx3iCDptOip2dT8xLevCIibX/uikDzghgSA5rb8zRDQV475qQj1njdrmMVoNXreUNXWHqpyS/5v95yLv02ZGSkT0khxIbpQ9CeDfPk9zpJZNzQHRqRAgMBAAECggEAdM3vFrXJ8j8SDoXX8gi050KkrS829Jf+1Rol7Owo+pIAT2HdQk+8XcamBKZrGLs6eD4XAHYFP22WoG5Fzz1b45p6mmYeAMnNERJ0f6CSHTZS5i+2wZ8cO50sxljnPNWB1sbHBn/REV4646ip8r61f4CICVyZHQmDrHGhtKsqLUf33CEUIId6wyacUka6r23QUZMysCPxfySASMC64KfxNHaoBKXha4qcNEItAfHl3Jbpbr2SUeVV5KS4Tp5mO+3g0qhgvcr+lNMDnkjpi+PRhvpVzCOpwEP5UJCi2LpeZU6LlThsEsobdXNxWk/QFveOlPGtA7SJFiCUWJBDtS9U/QKBgQDVnnjDict4ukDqF43m1+3On98T2c1SjgeE2FtGTvwgZt4HKfEv6cuPm6iOnJ0d1EmgWYvEd0qA4atLLCfHrRARma3ldJMYVR3VcANG5JAzURML57loG4GSX/Gp0Akt+bimnjmxINk4GmwjCCm+HhOslKY4Gp72xxBmFzzyQBaI6wKBgQCreYqYfR8f/tQ1r+KM+vw+Cdrs97v33cmSKizyNuLCUCr8IubqDfyZXJzqhSK7J4s5QlPQOkMd5/D2G1lW6jq3UqBVob4albeZlwnH53C2wlAP1cAzawYhKUgQxIK4VLiulkVuxwFlsh0KYsgaDEgmxUt1hweC27I1kqBKM3KLcwKBgFkvBRoV0EYB9JIG7W5f3d+y7S5bcxYxR8BVl5294hMg/zcccp5fTGYTRYbsqcfHVknEuM54QzmVfa8vqxf5D8lZULmINtUkzATM9AFH8VALXBlPUB+/xBO5TKppuTthk460Zj+mCCodFeJ2SP8fjXUyxkaMDqvWpekJcJ9u1DmrAoGBAJ5HAQxCKhGxeZXYtOhm36AwHpkvDpz7Zoz5SyWETgkIULUNTlHq+SdiWiELJQTVumfu9kg1DzCyoDO7CNr2N55xsTd5pW0Klz85MDkKQ3senyIOrmuHtU+0uCVqDjMxWIsmgA6BuKNzJeUpSwToI01OPZnNOryqJ7PVlQkItglLAoGADTgEZ5Gz3m0dtcr353+BC5g5q2hcAbmklPc3W9fThLuhDE8UDxT0rzwlZqFr0cguU4fA+Nyc+0MFoUveiWRD0+GblLAtOsr1sUUK11qKF/ihFla45gKcO7l7dxB4grsVDavN2G2SOjZ23Eb6Y0NfYG4/RqZZHD+gB9leQpe2uBQ=\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuario/buscar/nome",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuario",
+								"buscar",
+								"nome"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Usuario Por Email",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"marcelpaa@hotmail.com\",\n\t\"chavePrivada\": \"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCPFkY4XRCBDOgus9PhZbtQYiIeAJWe55Gyw1WMi23HgHYQxJh5c5aUw+IjLD83lynVe2GRGFJKyT5zbm2AL15hwKVSMp588GA20PSMsCik1yjOJ/rDCqCJA8b/RqGkASlF7ZrghcpTdYAQZrwohg/A8Q3GoRbPGovqzGv2s60kioSLWo9sGxS6XxrHLl1fbqKC6rPp1Vzx4IsKhMEshY+Qy+i0sgpxMMRFUZSx3iCDptOip2dT8xLevCIibX/uikDzghgSA5rb8zRDQV475qQj1njdrmMVoNXreUNXWHqpyS/5v95yLv02ZGSkT0khxIbpQ9CeDfPk9zpJZNzQHRqRAgMBAAECggEAdM3vFrXJ8j8SDoXX8gi050KkrS829Jf+1Rol7Owo+pIAT2HdQk+8XcamBKZrGLs6eD4XAHYFP22WoG5Fzz1b45p6mmYeAMnNERJ0f6CSHTZS5i+2wZ8cO50sxljnPNWB1sbHBn/REV4646ip8r61f4CICVyZHQmDrHGhtKsqLUf33CEUIId6wyacUka6r23QUZMysCPxfySASMC64KfxNHaoBKXha4qcNEItAfHl3Jbpbr2SUeVV5KS4Tp5mO+3g0qhgvcr+lNMDnkjpi+PRhvpVzCOpwEP5UJCi2LpeZU6LlThsEsobdXNxWk/QFveOlPGtA7SJFiCUWJBDtS9U/QKBgQDVnnjDict4ukDqF43m1+3On98T2c1SjgeE2FtGTvwgZt4HKfEv6cuPm6iOnJ0d1EmgWYvEd0qA4atLLCfHrRARma3ldJMYVR3VcANG5JAzURML57loG4GSX/Gp0Akt+bimnjmxINk4GmwjCCm+HhOslKY4Gp72xxBmFzzyQBaI6wKBgQCreYqYfR8f/tQ1r+KM+vw+Cdrs97v33cmSKizyNuLCUCr8IubqDfyZXJzqhSK7J4s5QlPQOkMd5/D2G1lW6jq3UqBVob4albeZlwnH53C2wlAP1cAzawYhKUgQxIK4VLiulkVuxwFlsh0KYsgaDEgmxUt1hweC27I1kqBKM3KLcwKBgFkvBRoV0EYB9JIG7W5f3d+y7S5bcxYxR8BVl5294hMg/zcccp5fTGYTRYbsqcfHVknEuM54QzmVfa8vqxf5D8lZULmINtUkzATM9AFH8VALXBlPUB+/xBO5TKppuTthk460Zj+mCCodFeJ2SP8fjXUyxkaMDqvWpekJcJ9u1DmrAoGBAJ5HAQxCKhGxeZXYtOhm36AwHpkvDpz7Zoz5SyWETgkIULUNTlHq+SdiWiELJQTVumfu9kg1DzCyoDO7CNr2N55xsTd5pW0Klz85MDkKQ3senyIOrmuHtU+0uCVqDjMxWIsmgA6BuKNzJeUpSwToI01OPZnNOryqJ7PVlQkItglLAoGADTgEZ5Gz3m0dtcr353+BC5g5q2hcAbmklPc3W9fThLuhDE8UDxT0rzwlZqFr0cguU4fA+Nyc+0MFoUveiWRD0+GblLAtOsr1sUUK11qKF/ihFla45gKcO7l7dxB4grsVDavN2G2SOjZ23Eb6Y0NfYG4/RqZZHD+gB9leQpe2uBQ=\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuario/buscar/email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuario",
+								"buscar",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Usuario Por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/usuario/deletar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuario",
+								"deletar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Usuario Por ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Marcel Philippe\",\n\t\"email\": \"marcelpaa@gmail.com\",\n\t\"chavePublica\": \"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjxZGOF0QgQzoLrPT4WW7UGIiHgCVnueRssNVjIttx4B2EMSYeXOWlMPiIyw/N5cp1XthkRhSSsk+c25tgC9eYcClUjKefPBgNtD0jLAopNcozif6wwqgiQPG/0ahpAEpRe2a4IXKU3WAEGa8KIYPwPENxqEWzxqL6sxr9rOtJIqEi1qPbBsUul8axy5dX26iguqz6dVc8eCLCoTBLIWPkMvotLIKcTDERVGUsd4gg6bToqdnU/MS3rwiIm1/7opA84IYEgOa2/M0Q0FeO+akI9Z43a5jFaDV63lDV1h6qckv+b/eci79NmRkpE9JIcSG6UPQng3z5Pc6SWTc0B0akQIDAQAB\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/usuario/atualizar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"usuario",
+								"atualizar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Digito Unico",
+			"item": [
+				{
+					"name": "Cadastrar Digito Unico",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 4,\n\t\"numeroInteiro\": \"9875\",\n\t\"fatorConcatenacao\": 4,\n\t\"usuarioId\": \"1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/digito-unico/cadastrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"digito-unico",
+								"cadastrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Digitos Unico Do Usuario",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/digito-unico/buscar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"digito-unico",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Criptografia",
+			"item": [
+				{
+					"name": "Gerar Chaves Criptográficas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/digito-unico/criptografia/gerar/chaves",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"digito-unico",
+								"criptografia",
+								"gerar",
+								"chaves"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
