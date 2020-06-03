@@ -1,4 +1,4 @@
-# PROJETO API DO BANCO INTER
+# PROJETO API PARA ORGANIZAÇÕES BANCÁRIAS
 
 1. Como compilar e executar a aplicação:
   - Para compilar e executar a aplicação é necessário executar o seguinte comando: mvn spring-boot: run
@@ -18,6 +18,8 @@
 Os desafios dessa API propostas pelo banco Inter foram todos devidamente compridos.
 
 Desenvolvedor Responsável: Marcel Philippe Abreu Andrade Contatos: (31) 998565849 - marcelpaa@hotmail.com
+
+:computer: :closed_lock_with_key: :moneybag:
 
 
 
