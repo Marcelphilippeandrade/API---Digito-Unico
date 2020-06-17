@@ -15,8 +15,6 @@
 4. Como acessar a documentação da API com a interface do Framework Swagger
    - Para acessar a documentação da API com a interface do Swagger é necessário: Acessar o seguinte endereço: http://localhost:8080/swagger-ui.html
 
-Os desafios dessa API propostas pelo banco Inter foram todos devidamente compridos.
-
 Desenvolvedor Responsável: Marcel Philippe Abreu Andrade Contatos: (31) 998565849 - marcelpaa@hotmail.com
 
 :computer: :closed_lock_with_key: :moneybag:
