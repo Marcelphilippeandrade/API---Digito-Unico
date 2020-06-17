@@ -1,4 +1,4 @@
-# PROJETO API PARA ORGANIZAÇÕES BANCÁRIAS
+# PROJETO DIGITO ÚNICO(API) PARA ORGANIZAÇÕES BANCÁRIAS
 
 1. Como compilar e executar a aplicação:
   - Para compilar e executar a aplicação é necessário executar o seguinte comando: mvn spring-boot: run
